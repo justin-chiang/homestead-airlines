@@ -1,0 +1,579 @@
+/*all styling*/
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Raleway';
+}
+
+
+.cover{
+  background: url("../img/customerservice.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 100px;
+}
+
+.headercontainer{
+  background: linear-gradient(0deg, rgba(0,0,0,0), rgba(255,255,255,.5));
+  height:10vh;
+}
+
+header{
+  display: flex;
+  width: 90%;
+  height: 10vh;
+  margin: auto;
+  color:white;
+  align-items: center;
+  font-size: 1.5rem;
+  flex-wrap:wrap;
+}
+
+.logo-container, .nav-links{
+  display: flex;
+}
+.logo-container{
+  align-items: center;
+}
+.logo-container img{
+  width:10%;
+  height:10%;
+  mix-blend-mode: multiply;
+}
+.logo{
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+  margin: 5px;
+  transition: .2s;
+}
+
+.logo:hover{
+  color:rgb(68, 204, 19);    
+}
+
+nav{
+  flex: 2;
+}
+.nav-links{
+  justify-content: space-around;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.nav-link{
+  color: white;
+  font-size:  1rem;
+  text-decoration: none;
+  transition:.2s;
+}
+
+.nav-link:hover{
+  color:rgb(68, 204, 19);    
+  font-size:1.25rem;
+}
+
+/*all styling ends*/
+/*homepage styling begins*/
+
+.presentation{
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 80vh;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 30px;
+}
+
+
+/***************/
+
+.content{
+height: 85vh;
+width: 100%;
+background-color: rgba(255, 255, 255, 0);
+display:flex;
+}
+
+.heading{
+align-self: center;
+flex:3;
+padding-right: 100px;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+
+}
+
+.heading h1{
+color:white;
+font-size: 5rem;
+font-family: "Sarabun";
+padding-bottom: 20px;
+}
+.heading p{
+color:white;
+font-family: "Raleway";
+font-size:1.5rem;
+line-height: 2.5rem;
+
+}
+
+.panel{
+border:1px solid white;
+flex:5;
+align-self: center;
+overflow: scroll;
+max-height: 70vh;
+}
+
+
+
+.panel nav{
+padding-bottom: 30px;
+
+}
+
+.panel h1{
+font-size: 2rem;
+color:white;
+padding: 0px 0px 15px 15px;
+}
+
+.panel p{
+color:rgb(197, 197, 197);
+padding-left: 15px;
+line-height: 2rem;
+padding-bottom: 15px;
+}
+
+.panel nav ul{
+list-style: none;
+display:flex;
+padding-top: 30px;
+justify-content: space-around;
+flex-wrap:wrap;
+}
+.panel nav li{
+text-decoration: none;
+color:white;
+font-size: 2rem;
+transition: .5s;
+
+}
+
+.panel nav li button{
+background:transparent;
+font-size:2rem;
+border:none;
+padding:10px;
+border-radius:10px;
+color:white;
+transition:.15s;
+}
+
+.panel nav li button:hover{
+cursor:pointer;
+color: rgb(190, 190, 190);
+}
+
+.panel nav li button:focus{
+outline:none;
+}
+
+.active button{
+border: white 1px solid !important;
+}
+
+.form{
+padding-top: 20px;
+background-color: rgb(255, 255, 255);
+}
+
+.form h1{
+text-align: center;
+font-size: 3rem;
+width: 85%;
+letter-spacing: 1rem;
+color:rgb(32, 70, 153);
+padding-bottom: 20px;
+}
+
+
+.form{
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+
+.form form{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+width:80%;
+
+}
+
+form input{
+font-size:2rem;
+width:80%;
+padding:5px;
+margin-bottom: 20px;
+}
+
+.rightform{
+flex:1;
+display:flex;
+flex-direction: column;
+align-items: center;
+}
+
+.leftform{
+flex:1;
+display:flex;
+flex-direction:column;
+align-items:center;
+
+}
+
+.jobbtns{
+width:70%;
+padding-top: 20px;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+margin-bottom: 20px;
+}
+
+.jobbtns a{
+padding:10px;
+border: 1px solid black;
+transition: .25s;
+}
+
+.jobbtns a:hover{
+cursor: pointer;
+
+}
+
+.shade{
+background:rgb(32, 70, 153);
+color:white;
+}
+
+.coverletter{
+height:55%;
+width:80%;
+padding:5px;
+font-size: 1rem;
+font-family:"Raleway";
+}
+
+.coverletter::placeholder{
+font-family: "Raleway";
+}
+
+.resume{
+padding-top: 10px;
+text-align: center;
+font-size:1.5rem;
+}
+
+.submit{
+margin-top: 30px;
+color:rgb(41, 38, 30);
+text-decoration: none;
+font-size: 2rem;
+padding:5px 15px 5px 15px;
+border:1px solid rgb(32, 70, 153);
+margin-bottom: 20px;
+
+}
+
+.submit:hover{
+background:rgb(32, 70, 153, .3);
+}
+
+.contact{
+  padding: 40px 0 30px 0;
+  text-align:center;
+  margin:auto;
+  align-items: center;
+  background: url("../img/airport.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color:white;
+  display:flex;
+  
+}
+
+.title{
+  text-align: left;
+  padding-left: 30px;
+  flex:1;
+}
+
+
+.title h1{
+  font-size: 3rem;
+}
+
+.title p, .social{
+  width: 85%;
+}
+
+
+.inputinfo{
+  flex:2;
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.userinfo{
+  flex:1;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.message{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.message textarea{
+  margin-left: 25px;
+  justify-self: left;
+  background:transparent;
+  font-size: 1.5rem;
+  width:90%;
+  height:55%;
+  color:white;
+  padding:5px;
+  font-family: 'Raleway';
+
+}
+
+.message textarea::placeholder{
+  font-family: 'Raleway';
+  color:rgb(190, 190, 190);
+}
+
+.message button{
+  width:50%;
+  margin-top:20px;
+  align-self: center;
+  background: transparent;
+  font-size: 1.5rem;
+  color:white;
+  font-family: 'Raleway';
+
+}
+
+.message button:hover{
+  transition: .5s;
+  background-color: rgba(0, 201, 77, 0.2);
+  cursor: pointer;
+}
+
+.inputinfo input{
+  background: transparent;
+  font-size:2rem;
+  padding:5px;
+  font-family: 'Raleway';
+  color:white;
+}
+
+.inputinfo input::placeholder{
+  font-family: 'Raleway';
+  color:rgb(190, 190, 190);
+}
+
+.social{
+  padding-top: 10px;
+}
+
+.social a{
+  padding-right: 20px;
+}
+
+.social a:last-child{
+  padding-right:0px;
+}
+
+footer{
+  text-align: center;
+  background:gray;
+  color: white;
+}
+
+@media (max-width: 500px){
+  .cover{
+    padding-bottom: 60vh;
+  }
+  .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+
+  .heading{
+    flex: 1;
+    padding: 0;
+    margin: 0;
+    flex-wrap: none;
+    display: inline;
+  }
+
+  .heading h1{
+    font-size: 2rem;
+  }
+
+  .heading p{
+    font-size: 1rem;
+  }
+
+  .panel{
+    flex: 1;
+    min-height: 60vh;
+    margin-top: 50px;
+    max-height: 60vh;
+  }
+  
+  .contact{
+    flex-wrap: none;
+    flex-direction: column;
+  }
+
+  .title, .inputinfo{
+    width: 80%;
+  }
+
+  .social{
+    width: 100%;
+  }
+
+  .userinfo input{
+    font-size: 18px;
+    margin: -0.5px 0 -0.5px 0;
+  }
+
+  .message textarea, .message button{
+    font-size: 18px;
+  }
+
+  .form h1{
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .form input{
+    padding: 0;
+    height: 40px;
+    font-size: 14px;
+    border: 1px rgb(214, 214, 214) solid;
+  }
+
+  .leftform{
+    width: 50%;
+    margin: auto;
+  }
+
+  .leftform textarea{
+    font-size: 18px;
+    }
+
+  .leftform p{
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 800px){
+  .cover{
+    padding-bottom: 20vh;
+  }
+  .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+
+  .heading{
+    flex: 1;
+    padding: 0;
+    margin: 0;
+    flex-wrap: none;
+    display: inline;
+  }
+
+  .heading h1{
+    font-size: 2rem;
+  }
+
+  .heading p{
+    font-size: 24px;
+  }
+
+  .panel{
+    flex: 1;
+    min-height: 500px;
+    margin-top: 50px;
+  }
+  
+  .contact{
+    flex-wrap: none;
+    flex-direction: column;
+  }
+
+  .title, .inputinfo{
+    width: 80%;
+  }
+
+  .social{
+    width: 100%;
+  }
+
+  .userinfo input{
+    font-size: 18px;
+    margin: -0.5px 0 -0.5px 0;
+  }
+
+  .message textarea, .message button{
+    font-size: 18px;
+  }
+
+  .form h1{
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .form input{
+    padding: 0;
+    height: 40px;
+    font-size: 14px;
+    border: 1px rgb(214, 214, 214) solid;
+  }
+
+  .leftform{
+    width: 50%;
+    margin: auto;
+  }
+
+  .leftform textarea{
+    font-size: 18px;
+  }
+
+  .leftform p{
+    font-size: 18px;
+  }
+}

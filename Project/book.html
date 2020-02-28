@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width", initial scale=1.0>
+	<title>Homestead Airlines | Book a Flight</title>
+	<link rel="stylesheet" href="./css/bookstyles.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,800&display=swap" rel="stylesheet">
+    <link rel="icon" 
+    type="image/png" 
+    href="./img/logo2.png">
+</head>
+<body>
+
+    <div class="backgroundpic">
+        <div class="headercontainer">
+            <header>
+                <div class="logo-container">
+                    <img src="./img/logo2.png" alt="logo">
+                    <a href="index.html" class="logo">Homestead Airlines</a>
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a class="nav-link" href="#">Book</a></li>
+                        <li><a class="nav-link" href="./airlineinfo.html">Airline Information</a></li>
+                        <li><a class="nav-link" href="./frequent.html">Frequent Flyer Program</a></li>
+                        <li><a class="nav-link" href="./apply.html">Job Application</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <div class="cover">
+            <div class="form">
+                <div class="flightinfo">
+                    <form class="customerinfo">
+                    <h1>Flight Information</h1>                    
+                    <div class="flying">
+                        <div class="from">
+                            <p>Flying From</p>
+                            <select name="" class="custom-select" required>
+                                <option value="">Select a City</option>
+                                <option value="1">Los Angeles (LAX)</option>
+                                <option value="2">San Francisco (SFO)</option>
+                                <option value="3">San Diego (SAN)</option>
+                                <option value="4">Sacramento (SMF)</option>
+                                <option value="5">Oakland (OAK)</option>
+                                <option value="6">Fresno (FAT)</option>
+                                <option value="7">San Jose (SJC)</option>
+                                <option value="8">Santa Barbara (SBA)</option>
+                                <option value="9">San Luis Obispo (SBP)</option>
+                                <option value="10">Long Beach (LGB)</option>
+                                <option value="11">Phoenix (PHX)</option>
+                                <option value="12">Seattle (SEA)</option>
+                                <option value="13">Las Vegas (LAS)</option>
+                                <option value="14">Portland (PDX)</option>
+                                <option value="15">Salt Lake City (SLC)</option>
+                            </select>
+                        </div>
+                            
+                        <div class="to">
+                            <p>Flying To</p>
+                            <select name="" class="custom-select" required>
+                                <option value="">Select a Destination</option>
+                                <option value="1">Los Angeles (LAX)</option>
+                                <option value="2">San Francisco (SFO)</option>
+                                <option value="3">San Diego (SAN)</option>
+                                <option value="4">Sacramento (SMF)</option>
+                                <option value="5">Oakland (OAK)</option>
+                                <option value="6">Fresno (FAT)</option>
+                                <option value="7">San Jose (SJC)</option>
+                                <option value="8">Santa Barbara (SBA)</option>
+                                <option value="9">San Luis Obispo (SBP)</option>
+                                <option value="10">Long Beach (LGB)</option>
+                                <option value="11">Phoenix (PHX)</option>
+                                <option value="12">Seattle (SEA)</option>
+                                <option value="13">Las Vegas (LAS)</option>
+                                <option value="14">Portland (PDX)</option>
+                                <option value="15">Salt Lake City (SLC)</option>
+                            </select>
+                        </div>                                    
+                    </div>
+                    
+                    <div class="dates">
+                        <div class="departing">
+                            <p>Departing</p>
+                            <input type="date" class="dateselect" required>
+                        </div>
+                        <div class="arrival">
+                            <p>Arrival</p>
+                            <input type="date" class="dateselect" required>
+                        </div>
+                    </div>
+
+                    <div class="time">
+                        <div class="departuretime">
+                            <p>Departure Time</p>
+                            <select name="" class="custom-select" required>
+                                <option value="">Select a time</option>
+                                <option value="1">5:30AM</option>
+                                <option value="1">7:00AM</option>
+                                <option value="1">9:30AM</option>
+                                <option value="1">11:15AM</option>
+                                <option value="1">2:30PM</option>
+                                <option value="1">5:30PM</option>
+                                <option value="1">8:30PM</option>
+                            </select>
+                        </div>
+                        <div class="arrivaltime">
+                            <p>Arrival Time</p>
+                            <select name="" class="custom-select" required>
+                                <option value="">Select a time</option>
+                                <option value="1">7:30AM</option>
+                                <option value="1">9:00AM</option>
+                                <option value="1">11:30AM</option>
+                                <option value="1">1:15PM</option>
+                                <option value="1">4:30PM</option>
+                                <option value="1">7:30PM</option>
+                                <option value="1">10:30PM</option>
+                            </select>
+                        </div>
+                    </div>
+        
+                    <div class="passengers">
+                        <div class="adults">
+                            <p>Adults</p>
+                            <input type="number" placeholder="" min="0" required>
+                        </div>
+                        <div class="children">
+                            <p>Children</p>
+                            <input type="number" placeholder="" min="0" required>
+                        </div>
+                    </div>
+                    
+                    <div class="travelclass">
+                        <p>Travel Class</p>
+                        <select name="" class="custom-select" required>
+                            <option value=""></option>
+                            <option value="1">Economy Class</option>
+                            <option value="2">Business Class</option>
+                            <option value="3">First Class</option>
+                        </select>
+                    </div>
+                 </div>
+
+                 <div class="customerinfo">
+                    <h1>Customer Information</h1>
+                    <input class="in" type="name" placeholder="Name" required>
+                    <br>
+                    <input class="in" type="email" placeholder="Email" required>
+                    <br>
+                    <input class="in" type="tel" placeholder="Phone Number" required>
+                    <br>
+                </div>
+            </div>
+            
+            <div class="infobutton">
+                <div class="textinfo">
+                    <h1>Your adventure awaits.</h1>
+                    
+                    <p>Looking to explore the West Coast? Plan your next vacation with Homestead Airlines, bringing you affordable flights without compromising quality.</p>
+                    <br>
+                    <p>Part of our HomePlus program? Benefits and points will automatically be added with any flights booked. See our Frequent Flyer Program page for more information on our HomePlus program.</p>
+                    <br>
+                    <p>Fill out the booking form with flight and customer information, and book your flight with the button below! Happy traveling!</p>
+                </div>
+                <div class="button">
+                    <a href="book.html"><button onclick="clear()" type="submit">Book Flight</button></a>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <section class="contact">
+        <div class ="title">
+            <h1>Contact Us</h1>
+            <br>
+            <p>Have a question? Contact us using the form, and we'll get back to you ASAP. <br> Or, you can find us at our social media links:</p>
+            <div class="social">
+                <a href="https://www.instagram.com"><img src="img/insta.png" width=35px height=35px alt="insta"></a>
+                <a href="https://www.facebook.com"><img src="img/facebook.png" width=35px height=35px alt="fb"></a>
+                <a href="https://www.youtube.com"><img src="img/youtube.png" width=50px height=35px alt="yt"></a>
+                <a href="https://www.twitter.com"><img src="img/twitter.png" width=40px height=40px alt="twitter"></a>
+            </div>
+        </div>
+        <form class="inputinfo">
+            <div class="userinfo">
+                <input class="in" type="name" placeholder="Name" required>
+                <br>
+                <input class="in" type="email" placeholder="Email" required>
+                <br>
+                <input class="in" type="" placeholder="Phone Number" required>
+                
+            </div>
+            <div class="message">
+                <textarea class="in" type="message" placeholder="Your message here" rows="3" required></textarea>
+                <button onclick="clear()" type="submit">Submit</button>
+            </div>
+        </form>  
+    </section>
+
+    <footer>
+        <p>Copyright HomesteadAirlines &copy; 2020</p>
+    </footer>
+    
+</body>
+</html>

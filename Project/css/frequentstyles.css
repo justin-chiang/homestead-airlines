@@ -1,0 +1,273 @@
+/* all styling*/
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  
+}
+
+body{
+  font-family: 'Raleway';
+  position: absolute;
+}
+
+.headercontainer{
+  border-bottom: 1px black solid;
+  background: transparent;
+}
+
+header{
+  display: flex;
+  width: 90%;
+  height: 10vh;
+  margin: auto;
+  color:black;
+  align-items: center;
+  font-size: 1.5rem;
+  flex-wrap:wrap;
+}
+
+.logo-container, .nav-links{
+  display: flex;
+}
+.logo-container{
+  align-items: center;
+}
+.logo-container img{
+  width:10%;
+  height:10%;
+  mix-blend-mode: multiply;
+}
+.logo{
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+  margin: 5px;
+}
+
+.logo:hover{
+  color:rgb(45, 96, 27);    
+}
+
+nav{
+  flex: 2;
+}
+.nav-links{
+  justify-content: space-around;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.nav-link{
+  color: black;
+  font-size:  1rem;
+  text-decoration: none;
+  transition:.2s;
+}
+
+.nav-link:hover{
+  color:rgb(45, 96, 27);
+  font-size:1.25rem;
+}
+/* ends*/
+
+.centercontent{
+  display:flex;
+  justify-content: center;
+}
+
+.main-content{
+  display:flex;
+  width:100%;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.main-content section{
+  border-radius: 30px;
+  width:20rem;
+  margin:3%;
+  box-shadow: 10px 10px 27px 1px rgba(0,0,0,0.75);
+
+}
+
+.main-content section img{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:100%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.contentinfo{
+  padding: 20px;
+}
+
+
+.introduction{
+  padding-top: 3em;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+}
+
+.introduction h1{
+  font-size: 3rem;
+  letter-spacing: .5rem;
+}
+
+.introduction p{
+  padding-top: 15px;
+  font-size:20px;
+}
+
+.contact{
+  padding: 40px 0 30px 0;
+  text-align:center;
+  margin:auto;
+  align-items: center;
+  background: url("../img/airport.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color:white;
+  display:flex;
+  
+}
+
+.title{
+  text-align: left;
+  padding-left: 30px;
+  flex:1;
+}
+
+
+.title h1{
+  font-size: 3rem;
+}
+
+.title p, .social{
+  width: 85%;
+}
+
+
+.inputinfo{
+  flex:2;
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.userinfo{
+  flex:1;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.message{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.message textarea{
+  margin-left: 25px;
+  justify-self: left;
+  background:transparent;
+  font-size: 1.5rem;
+  width:90%;
+  height:55%;
+  color:white;
+  padding:5px;
+  font-family: 'Raleway';
+
+}
+
+.message textarea::placeholder{
+  font-family: 'Raleway';
+  color:rgb(190, 190, 190);
+}
+
+.message button{
+  width:50%;
+  margin-top:20px;
+  align-self: center;
+  background: transparent;
+  font-size: 1.5rem;
+  color:white;
+  font-family: 'Raleway';
+
+}
+
+.message button:hover{
+  transition: .5s;
+  background-color: rgba(0, 201, 77, 0.2);
+  cursor: pointer;
+}
+
+.inputinfo input{
+  background: transparent;
+  font-size:2rem;
+  padding:5px;
+  font-family: 'Raleway';
+  color:white;
+}
+
+.inputinfo input::placeholder{
+  font-family: 'Raleway';
+  color:rgb(190, 190, 190);
+}
+
+.social{
+  padding-top: 10px;
+}
+
+.social a{
+  padding-right: 20px;
+}
+
+.social a:last-child{
+  padding-right:0px;
+}
+
+footer{
+  text-align: center;
+  background:gray;
+  color: white;
+}
+
+@media (max-width: 500px){
+  .introduction{
+    width: 80%;
+    margin: auto;
+  }
+  .introduction h1{
+    font-size: 7.5vw;
+  }
+  .headercontainer{
+    border-bottom: none;
+  }
+
+  .contact{
+    flex-wrap: none;
+    flex-direction: column;
+  }
+
+  .title, .inputinfo{
+    width: 80%;
+  }
+
+  .social{
+    width: 100%;
+  }
+
+  .userinfo input{
+    font-size: 18px;
+    margin: -0.5px 0 -0.5px 0;
+  }
+
+  .message textarea, .message button{
+    font-size: 18px;
+  }
+}

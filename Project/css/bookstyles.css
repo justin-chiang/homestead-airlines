@@ -1,0 +1,464 @@
+/* all styling*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+
+  }
+  
+  body{
+    font-family: 'Raleway';
+  }
+  
+  .headercontainer{
+    border-bottom: 1px white solid;
+    background: transparent;
+  }
+  
+  header{
+    display: flex;
+    width: 90%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .logo-container, .nav-links{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .logo-container{
+    align-items: center;
+    
+  }
+  .logo-container img{
+    width:10%;
+    height:10%;
+    mix-blend-mode: multiply;
+  }
+  .logo{
+    font-weight: 400;
+    text-decoration: none;
+    margin: 5px;
+    color: white;
+    transition: .25s;
+  }
+  
+  .logo:hover{
+    color:rgb(25, 179, 64);
+  
+  }
+  
+  nav{
+    flex: 2;
+  }
+  .nav-links{
+    justify-content: space-around;
+    list-style: none;
+    flex-wrap: wrap;
+  }
+  .nav-link{
+    color: white;
+    font-size:  1rem;
+    text-decoration: none;
+    transition:.2s;
+  
+  }
+  
+  .nav-link:hover{
+    font-size:1.25rem;
+    color:rgb(25, 179, 64);
+
+  }
+  
+  
+  
+  /* ends*/
+
+  .backgroundpic{
+      
+    background: url("../img/bookcoverpic.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+
+  .cover{
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+      display: flex;
+      flex-wrap: wrap;
+      width: 85%;
+      margin: auto;
+      justify-content: space-between;
+  }
+
+  .form{
+      flex: 1;
+      margin-right: 3rem;
+      background:white;
+      box-shadow: 10px 10px 27px 1px rgba(0,0,0,0.75);
+      padding: 30px;
+      border-radius: 15px;
+  }
+
+  .flying{
+      display:flex;
+      padding: 10px 0px 10px 0px;
+  }
+
+  .from{
+      flex: 1;
+  }
+
+  .to{
+      flex:1;
+  }
+
+  .from select, .to select{
+      width: 85%;
+      font-family: 'Raleway';
+      background:white;
+  }
+
+  .dates{
+      display: flex;
+      flex-wrap: wrap;
+      padding: 10px 0px 10px 0px;
+
+  }
+
+    .departing{
+      display: flex;
+      flex-wrap: wrap;
+        flex: 1;
+    }
+
+    .departing input{
+        margin-left: 10px;
+        font-family: 'Raleway';
+    }
+
+    .arrival{
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1;
+    }
+
+    .arrival input{
+        margin-left: 10px;
+        font-family: 'Raleway';
+    }
+
+    .time{
+      display: flex;
+      flex-wrap: wrap;
+      padding: 10px 0px 10px 0px;
+
+  }
+
+    .departuretime{
+      display: flex;
+      flex-wrap: wrap;
+        flex: 1;
+    }
+
+    .departuretime select{
+        margin-left: 10px;
+        font-family: 'Raleway';
+        background: white;
+    }
+
+    .arrivaltime{
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1;
+    }
+
+    .arrivaltime select{
+        margin-left: 10px;
+        font-family: 'Raleway';
+        background: white;
+    }
+
+    .passengers{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px 0px 10px 0px;
+  
+    }
+  
+      .adults{
+        display: flex;
+        flex-wrap: wrap;
+          flex: 1;
+      }
+  
+      .adults input{
+          margin-left: 10px;
+          width: 60%;
+          font-family: 'Raleway';
+
+      }
+  
+      .children{
+          display: flex;
+          flex-wrap: wrap;
+          flex: 1;
+      }
+  
+      .children input{
+          margin-left: 10px;
+          width: 60%;
+          font-family: 'Raleway';
+
+      }
+
+    .travelclass{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px 0px 10px 0px;
+    }
+
+    .travelclass select{
+        margin-left: 10px;
+        width: 50%;
+        font-family: 'Raleway';
+        background: white;
+
+    }
+
+
+  
+
+  .customerinfo{
+      margin-top:10px;
+  }
+
+  .in{
+      margin: 10px 0 5px 0;
+      padding: 5px 0 5px 0;
+      width: 100%;
+      font-family: 'Raleway';
+      font-size: 14px;
+  }
+  
+  .infobutton{
+      flex: 1;
+      margin-left: 3rem;
+      background:transparent;
+      /*box-shadow: 10px 10px 27px 1px rgba(0,0,0,0.75);*/
+      color: white;
+      padding: 40px 40px 40px 40px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-items: space-between;
+      flex-direction: column;
+  }
+
+.textinfo{
+    flex: 1;
+    margin-bottom: 4.5rem;
+}
+
+.button{
+    flex: 1;
+    align-items: center;
+    margin: auto;
+    margin-top: -50px;
+}
+
+.button button {
+    color: white;
+    background: transparent;
+    padding: 24px 64px;
+    border: 1px white solid;
+    font-size: 18px;
+    margin-top: 10px; 
+  }
+  
+  .button button:hover {
+    cursor: pointer;
+    background: rgba(0, 201, 77, 0.2);
+    transition:.5s;
+  }
+
+  .contact{
+    padding: 40px 0 30px 0;
+    text-align:center;
+    margin:auto;
+    align-items: center;
+    background: url("../img/airport.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color:white;
+    display:flex;
+    
+  }
+  
+  .title{
+    text-align: left;
+    padding-left: 30px;
+    flex:1;
+  }
+  
+  
+  .title h1{
+    font-size: 3rem;
+  }
+  
+  .title p, .social{
+    width: 85%;
+  }
+  
+  
+  .inputinfo{
+    flex:2;
+    display:flex;
+    flex-wrap: wrap;
+  }
+  
+  .userinfo{
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .message{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .message textarea{
+    margin-left: 25px;
+    justify-self: left;
+    background:transparent;
+    font-size: 1.5rem;
+    width:90%;
+    height:55%;
+    color:white;
+    padding:5px;
+    font-family: 'Raleway';
+  
+  }
+  
+  .message textarea::placeholder{
+    font-family: 'Raleway';
+    color:rgb(190, 190, 190);
+  }
+  
+  .message button{
+    width:50%;
+    margin-top:20px;
+    align-self: center;
+    background: transparent;
+    font-size: 1.5rem;
+    color:white;
+    font-family: 'Raleway';
+  
+  }
+  
+  .message button:hover{
+    transition: .5s;
+    background-color: rgba(0, 201, 77, 0.2);
+    cursor: pointer;
+  }
+  
+  .inputinfo input{
+    background: transparent;
+    font-size:2rem;
+    padding:5px;
+    font-family: 'Raleway';
+    color:white;
+  }
+  
+  .inputinfo input::placeholder{
+    font-family: 'Raleway';
+    color:rgb(190, 190, 190);
+  }
+  
+  .social{
+    padding-top: 10px;
+  }
+  
+  .social a{
+    padding-right: 20px;
+  }
+  
+  .social a:last-child{
+    padding-right:0px;
+  }
+  
+  footer{
+    text-align: center;
+    background:gray;
+    color: white;
+  }
+
+  @media (max-width: 800px){
+    
+    .headercontainer{
+      border-bottom: none;
+    }
+
+    .form p{
+      font-size: 14px;
+    }
+
+    .from select, .to select{
+      font-size: 10px;
+    }
+
+    .time select{
+      width: 90%;
+      margin: 0;
+    }
+
+    .departing input, .arrival input{
+      background: white;
+      font-size: 10px;
+    } 
+
+    .departuretime select, .arrivaltime select{
+      font-size: 10px;
+    }
+
+    .adults input, .children input{
+      border: 1px rgb(168, 168, 168) solid;
+    }
+
+    .travelclass select{
+      font-size: 10px;
+    }
+
+    .contact{
+      flex-wrap: none;
+      flex-direction: column;
+    }
+
+    .title, .inputinfo{
+      width: 80%;
+    }
+
+    .social{
+      width: 100%;
+    }
+
+    .userinfo input{
+      font-size: 18px;
+      margin: -0.5px 0 -0.5px 0;
+    }
+
+    .message textarea, .message button{
+      font-size: 18px;
+    }
+  }
+
+
